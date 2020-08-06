@@ -5,8 +5,25 @@ section {
 
 /* Секция героя */
 .hero {
-    text-align: center;
-    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #c4c4c4;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 696px;
+    margin: auto;
 }
 
 .hero-title {
@@ -17,12 +34,13 @@ section {
     font-size: 44px;
     line-height: 1.364;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--white-color);
 }
 
 .btn-main {
-    display: inline-block;
+    /* display: inline-block; */
     border-radius: 4px;
     border: 0 solid transparent;
     min-width: 200px;
@@ -32,7 +50,7 @@ section {
     font-size: 16px;
     line-height: 1.875;
     /* align-items: center; */
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     color: #ffffff;
     background-color: var(--accept-color);
