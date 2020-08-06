@@ -79,11 +79,11 @@ section.no-padding {
     display: flex;
 }
 
-.features-list > .flex-element {
+.features-list > .features-item {
     width: calc((100% -90px) / 4);
 }
 
-.features-list > .flex-element:not(:last-child) {
+.features-list > .features-item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -93,7 +93,7 @@ section.no-padding {
     background-color: #f5f4fa;
 } */
 
-.flex-element::before {
+.features-item::before {
     display: block;
     content: '';
     height: 120px;
@@ -103,19 +103,19 @@ section.no-padding {
     border-radius: 4px;
 }
 
-.flex-element:nth-child(1)::before {
+.features-item:nth-child(1)::before {
     background-image: url(../images/antenna.svg);
 }
 
-.flex-element:nth-child(2)::before {
+.features-item:nth-child(2)::before {
     background-image: url(../images/clock.svg);
 }
 
-.flex-element:nth-child(3)::before {
+.features-item:nth-child(3)::before {
     background-image: url(../images/diagram.svg);
 }
 
-.flex-element:nth-child(4)::before {
+.features-item:nth-child(4)::before {
     background-image: url(../images/astronaut.svg);
 }
 
