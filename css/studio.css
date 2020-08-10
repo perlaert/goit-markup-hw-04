@@ -87,36 +87,19 @@ section.no-padding {
     margin-right: 30px;
 }
 
-/* .features img {
-    padding: 25px 100px;
-    border-radius: 4px;
-    background-color: #f5f4fa;
-} */
-
-.features-item::before {
-    display: block;
-    content: '';
+.features-icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
     height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: #f5f4fa;
     border-radius: 4px;
 }
 
-.features-item:nth-child(1)::before {
-    background-image: url(../images/antenna.svg);
-}
-
-.features-item:nth-child(2)::before {
-    background-image: url(../images/clock.svg);
-}
-
-.features-item:nth-child(3)::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.features-item:nth-child(4)::before {
-    background-image: url(../images/astronaut.svg);
+.features-icon {
+    width: 70px;
+    height: 70px;
 }
 
 .features-title {
@@ -200,16 +183,40 @@ section.no-padding {
     color: var(--primary-text-color);
 }
 
-.social-list {
+.social-icons-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+.social-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+    background-color: transparent;
+}
+
+.social-icons-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+    color: var(--white-color);
+    background-color: var(--accept-color);
+}
+
+.social-icon {
+    fill: currentColor;
 }
 
 /* Наши клиенты */
 
 .clients-list {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .clients-list .clients-item {
@@ -220,12 +227,25 @@ section.no-padding {
     margin-right: 30px;
 }
 
-.clients-item a {
+.clients-link {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 170px;
     height: 90px;
 
     border: 1px solid #afb1b8;
     box-sizing: border-box;
     border-radius: 4px;
+    color: #afb1b8;
+}
+
+.clients-icon {
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--accept-color);
+    color: var(--accept-color);
 }

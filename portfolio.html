@@ -15,14 +15,28 @@
                 <nav class="header-nav">
                     <a href="./" class="logo"> <span>Web </span>Studio</a>
                     <ul class="site-nav list">
-                        <li class="item"><a href="./index.html" class="link">Студия</a></li>
-                        <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                        <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                         <li class="item"><a href="#" class="link">Контакты</a></li>
                     </ul>
                 </nav>
                 <ul class="contacts list">
-                    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                    <li class="contacts item">
+                        <a href="mailto:info@devstudio.com" class="link" target="_blank" rel="noopener noreferrer">
+                            <svg class="contacts-icon envelope">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts item">
+                        <a href="tel:+380961111111" class="link" target="_blank" rel="noopener noreferrer">
+                            <svg class="contacts-icon smartphone">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -40,7 +54,7 @@
                 <!-- Карточки -->
                 <ul class="portolio-list list">
                     <li class="portfolio-projects">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="./images/project1.jpg" alt="Ноутбук" width="370" height="294" />
                             <div class="portfolio-projects-desc">
                                 <h2 class="projects-title">Технокряк</h2>
@@ -50,7 +64,7 @@
                         </a>
                     </li>
                     <li class="portfolio-projects">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="./images/project2.jpg" alt="Постер Баскетбол" width="370" height="294" />
                             <div class="portfolio-projects-desc">
                                 <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
@@ -60,7 +74,7 @@
                         </a>
                     </li>
                     <li class="portfolio-projects">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="./images/project3.jpg" alt="Рестран рыбный" width="370" height="294" />
                             <div class="portfolio-projects-desc">
                                 <h2 class="projects-title">Ресторан Seafood</h2>
@@ -70,7 +84,7 @@
                         </a>
                     </li>
                     <li class="portfolio-projects">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="./images/project4.jpg" alt="Наушники" width="370" height="294" />
                             <div class="portfolio-projects-desc">
                                 <h2 class="projects-title">Проект Prime</h2>
@@ -80,7 +94,7 @@
                         </a>
                     </li>
                     <li class="portfolio-projects">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="./images/project5.jpg" alt="Две коробки" width="370" height="294" />
                             <div class="portfolio-projects-desc">
                                 <h2 class="projects-title">Проект Boxes</h2>
@@ -90,7 +104,7 @@
                         </a>
                     </li>
                     <li class="portfolio-projects">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="./images/project6.jpg" alt="Монитор с темной заставкой" width="370" height="294" />
                             <div class="portfolio-projects-desc">
                                 <h2 class="projects-title">Inspiration has no Borders</h2>
@@ -100,7 +114,7 @@
                         </a>
                     </li>
                     <li class="portfolio-projects">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="./images/project7.jpg" alt="Развернутая книга" width="370" height="294" />
                             <div class="portfolio-projects-desc">
                                 <h2 class="projects-title">Издание Limited Edition</h2>
@@ -110,7 +124,7 @@
                         </a>
                     </li>
                     <li class="portfolio-projects">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="./images/project8.jpg" alt="Бирка" width="370" height="294" />
                             <div class="portfolio-projects-desc">
                                 <h2 class="projects-title">Проект LAB</h2>
@@ -120,7 +134,7 @@
                         </a>
                     </li>
                     <li class="portfolio-projects">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="./images/project9.jpg" alt="Ноутбук" width="370" height="294" />
                             <div class="portfolio-projects-desc">
                                 <h2 class="projects-title">Growing Business</h2>
@@ -151,25 +165,33 @@
                         <p>
                             <b class="call-to-activity">Присоединяйтесь</b>
                         </p>
-                        <ul class="social-list list">
-                            <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Инстаграм">
-                                    <img src="./images/instagram.svg" alt="Instagram" />
+                        <ul class="footer-social-icons-list list">
+                            <li class="footer-social-icons-item">
+                                <a href="#" class="footer-social-icons-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Инстаграм">
+                                    <svg class="footer-social-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                    </svg>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" target="_blank" rel="noopener norefferer" aria-label="ссылка на Твиттер">
-                                    <img src="./images/twitter.svg" alt="Twitter" />
+                            <li class="footer-social-icons-item">
+                                <a href="#" class="footer-social-icons-link" target="_blank" rel="noopener norefferer" aria-label="ссылка на Твиттер">
+                                    <svg class="footer-social-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-twitter"></use>
+                                    </svg>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" target="_blank" rel="noopener norefferer" aria-label="ссылка на Фейсбук">
-                                    <img src="./images/facebook.svg" alt="Facebook" />
+                            <li class="footer-social-icons-item">
+                                <a href="#" class="footer-social-icons-link" target="_blank" rel="noopener norefferer" aria-label="ссылка на Фейсбук">
+                                    <svg class="footer-social-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                    </svg>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" target="_blank" rel="noopener norefferer" aria-label="ссылка на Линкэдин">
-                                    <img src="./images/linkedin.svg" alt="LinkedIn" />
+                            <li class="footer-social-icons-item">
+                                <a href="#" class="footer-social-icons-link" target="_blank" rel="noopener norefferer" aria-label="ссылка на Линкэдин">
+                                    <svg class="footer-social-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>

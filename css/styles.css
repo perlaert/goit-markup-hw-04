@@ -125,11 +125,28 @@ img {
 }
 
 .contacts .link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
     color: #757575;
+}
+
+.contacts-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts-icon.envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.contacts-icon.smartphone {
+    width: 10px;
+    height: 16px;
 }
 
 .contacts .link:hover,
@@ -188,9 +205,32 @@ img {
     text-transform: uppercase;
 }
 
-.footer .social-list {
+.footer-social-icons-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+.footer-social-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-icons-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-icons-link:hover,
+.footer-social-icons-link:focus {
+    background-color: var(--accept-color);
+}
+
+.footer-social-icon {
+    fill: currentColor;
 }
 
 .input-form {
