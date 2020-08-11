@@ -184,9 +184,14 @@ img {
     line-height: 1.714;
 }
 
-.address-contacts {
+.address-contacts a {
     margin-top: 9px;
     color: var(--footer-text-color);
+}
+
+.address .link:hover,
+.address .link:focus {
+    color: var(--accept-color);
 }
 
 .footer-social-contacts {
